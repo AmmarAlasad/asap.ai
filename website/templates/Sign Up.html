@@ -1,0 +1,64 @@
+{%extends "base.html" %}
+{%block title%}sign up{%endblock%}
+{%block HTML%}
+<div id="large-header" class="large-header">
+  <h1 class="main-title2"><span class="thin">Sign</span>Up</h1>
+  <div class="CenterDiv2">
+    <div class="gradient-border2" id="box2">
+      <div class="page">
+        <div class="container3">
+          <div class="left">
+            <div class="login">Sign up</div>
+            <div class="eula"></div>
+          </div>
+          <div class="right">
+              <svg viewBox="0 0 320 500">
+                <defs>
+                    <linearGradient
+                      inkscape:collect="always"
+                      id="linearGradient"
+                      x1="13"
+                      y1="193.49992"
+                      x2="307"
+                      y2="193.49992"
+                      gradientUnits="userSpaceOnUse">
+                      <stop
+                          style="stop-color:#ff00ff;"
+                          offset="0"
+                          id="stop876" />
+                      <stop
+                          style="stop-color:#ff0000;"
+                          offset="1"
+                          id="stop878" />
+                    </linearGradient>
+                </defs>
+                <path d="m40 120.0002 239.9998-.0003C279.9998 119.9999 304.9924 120.7992 305 155.0001c.008 34.2008-16 34.9999-25.0002 35h-239.9998c0-.0205-22 2.9999-23 32.9999 0 31 19 35 27 37h228c4-.5 36-4 36 34-1 29-3 37-34 40h-234c-7 2-20 1.7103-19 33 0 24.004 7 35 19 36h235C286 403 305 399 304 441 300 462 301 473 284 475H130C104 461 116 431 133 426H281C294 424 304 433 301 456m864.4286-48.0001v60m-50-30h190m443 13.9999 314 133.9999-35 35" style="stroke-dashoffset: 0px; stroke-dasharray: 110, 2000;"></path>
+              </svg>
+              <div class="form">
+                <form method="post">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter email">
+                
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter a Password">
+                
+                  <label for="firstName">First Name</label>
+                  <input type="Text" id="firstName" name="firstName" placeholder="Your First Name">
+                
+                  <label for="lastName">Last Name</label>
+                  <input type="Text" id="lastName" name="lastName" placeholder="Your Last Name">
+                
+                  <label for="password2">Confirm Password</label>
+                  <input type="password" id="password2" name="password2" placeholder="Confirm your Password">
+                  
+                  <input type="submit" id="submit" value="Submit">
+                </form>
+                
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}

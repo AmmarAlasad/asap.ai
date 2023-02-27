@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Generate Emoji{% endblock %}
+
+{% block HTML %}
+<div id="large-header" class="large-header">
+  <h1 class="main-title2"><span class="thin">Grammer</span>.Check</h1>
+  <div class="CenterDiv">
+    <div class="gradient-border" id="box">
+      <div class="formx">
+        <!--Form-->
+        <form method="POST" action="{{ url_for('views.checkGrammer') }}">
+          <label for="toCheck">Enter a movie title:</label>
+          <textarea name="toCheck"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    
+    <div class="gradient-border" id="box">
+      <div class="formx">
+
+        <p class="px">{{ checked }}</p>
+
+      </div> 
+    </div>
+    
+
+  </div>
+</div>
+{% endblock %}
